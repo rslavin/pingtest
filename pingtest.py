@@ -15,6 +15,11 @@ GREEN='\033[6;32;40m'
 YELLOW='\033[6;33;40m'
 RED='\033[6;31;40m'
 
+try:
+    HOST = argv[1]
+except IndexError:
+    pass
+
 print(f"Pinging {HOST}")
 
 while True:
